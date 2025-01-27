@@ -1,0 +1,103 @@
+.add{
+    width: 75%;
+    margin-left: max(5vw,25px);
+    margin-top: 60px;
+    color: black;
+    font-size: 16px;
+}
+.add form{
+    gap: 20px;
+}
+.add-img-up img{
+    width: 140px;
+    background-color: yellow;
+    border: 1.5px solid palevioletred;
+    border-radius: 8px;
+}
+.add-img-up p{
+    margin-left: 13px;
+    color: green;
+}
+.add-product-name, .add-product-description{
+    width: max(50%,200px);
+
+}
+.add-product-description textarea, .add-product-name input{
+    padding: 10px;
+
+}
+.add-category-price{
+    display: flex;
+    gap: 30px;
+}
+.add-category-price input, .add-category-price select{
+    max-width: 120px;
+    padding: 12px;
+}
+.add-btn{
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.add-icon .add{
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width:320px){
+    .add{
+        width: 60%;
+        margin-left: 2px;
+        margin-top: 30px;
+        color: black;
+        font-size: 12px;
+
+        
+    }
+    .add-icon img{
+        width: 40px;
+        height: 40px;
+    }
+    .add form{
+        gap: 15px;
+    }
+    .add-img-up img{
+        width: 100px;
+        background-color: aqua;
+        border: 1.3px solid gray;
+        border-radius: 8px;
+    }
+    .add-img-up p{
+        margin-left: 7px;
+        color: green;
+    }
+    
+    .add-product-name input{
+        padding: 3px 0px ;
+        
+    }
+    .add-product-description textarea{
+        padding: 0px 0px ;
+    }
+
+    
+    .add-category-price{
+        display: flex;
+        gap: 5px;
+    }
+    .add-category-price input, .add-category-price select{
+        max-width: 70px;
+        padding: 6px;
+    }
+    .add-btn{
+        max-width: 100px;
+        border: none;
+        padding: 10px;
+        background-color: black;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+}
