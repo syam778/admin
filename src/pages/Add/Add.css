@@ -46,6 +46,13 @@
     width: 40px;
     height: 40px;
 }
+.store input{
+    border: 1.4px solid tomato;
+    border-radius: 6px;
+    margin: 2px;
+    gap: 3px;
+    padding: 3px 6px;
+}
 
 @media (max-width:320px){
     .add{

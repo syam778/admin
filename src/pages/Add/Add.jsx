@@ -89,6 +89,7 @@ const Add = () => {
 export default Add;
 */
 import React, { useState } from 'react'
+//import React from 'react'
 import './Add.css'
 import { assets } from '../../assets/assets'
 //import { useState } from 'react-router-dom'
@@ -96,16 +97,20 @@ import axios from "axios"
 import { toast } from 'react-toastify'
 
 
-const Add = ({url}) => {
+const Add = ({ url }) => {
 
-    
+
     const [image, setImage] = useState(false);
     const [data, setData] = useState({
         name: "",
         description: "",
         price: "",
         category: "curd",
-        
+        phone: "",
+        city: "",
+        street: "",
+        firstName: ""
+
     })
     const notify = () => toast("Food ADD");
 
@@ -123,12 +128,16 @@ const Add = ({url}) => {
         formData.append("price", Number(data.price))
         formData.append("category", data.category)
         formData.append("image", image)
-        
+        formData.append("firstName", data.firstName)
+        formData.append("phone", data.phone)
+        formData.append("city", data.city)
+        formData.append("street", data.street)
 
-        
 
 
-        
+
+
+
         const response = await axios.post(`${url}/api/food/add`, formData);
         if (response.data.success) {
             setData({
@@ -136,11 +145,16 @@ const Add = ({url}) => {
                 description: "",
                 price: "",
                 category: "curd",
-                
+                phone: "",
+                city: "",
+                street: "",
+                firstName: ""
+
+
             })
             setImage(false)
             toast.success(response.data.message)
-            
+
         }
         else {
             toast.error(response.data.message)
@@ -186,16 +200,23 @@ const Add = ({url}) => {
                             <option value="Feta cheese">Feta cheese</option>
                             <option value="Fresh cream">Fresh cream</option>
                             <option value="Condensed Milk">Condensed Milk</option>
-                            
+
                         </select>
                     </div>
-                    
+
                     <div className="add-price form1">
                         <p>Product Price</p>
                         <input onChange={onChangeHandler} value={data.price} type="number" name='price' placeholder='$20' />
                     </div>
                 </div>
-               
+                <div className="store">
+                    <p>Store deteles</p>
+                    <input onChange={onChangeHandler} value={data.firstName} name='firstName' type="text" placeholder='Store Name' />
+                    <input onChange={onChangeHandler} value={data.phone} name='phone' type="number" placeholder='Store Number' />
+                    <input onChange={onChangeHandler} value={data.street} name='street' type="text" placeholder='Area Name' />
+                    <input onChange={onChangeHandler} value={data.city} name='city' type="text" placeholder='Your City Name' />
+                </div>
+
                 <button type='submit' onClick={notify} className='add-btn'>ADD</button>
             </form>
         </div>

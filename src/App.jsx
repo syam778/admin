@@ -13,6 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const App = () => {
+  //const url = "https://app.netlify.com/sites/backend-speed-del/overview"
   const url = "http://localhost:4001"
   return (
     <div >

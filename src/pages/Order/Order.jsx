@@ -58,10 +58,10 @@ const Order = ({url}) => {
               <p className='order-item-name'>{order.address.firstName+""+order.address.lastName}</p>
               <div className='order-item-add'>
                 <p>{order.address.street+","}</p>
-                <p>{order.address.city+","+order.address.state+","+order.address.country+","+order.address.ziocode+","}</p>
+                <p>{order.address.city+","+order.address.state+","+order.address.country+","+order.address.ziocode+","+order.address.email+","}</p>
                 
               </div>
-              <p className='phone'>{order.address.number+","+order.address.age+","+order.address.male+","}</p>
+              <p className='phone'>{order.address.phone+","+order.address.age+","+order.address.gender+","+order.address.firstName+","}</p>
             </div>
             <p className='len'>Items : {order.items.length}</p>
             <p className='amount'>${order.amount}</p>

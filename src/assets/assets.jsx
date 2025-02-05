@@ -7,7 +7,10 @@ import order from './order.png'
 import logoutt from './logoutt.png'
 import remove from './remove.png'
 import rating from './rating.png'
+ 
 
+//export const url = "https://app.netlify.com/sites/backend-speed-del/overview"
+//export const url = "http://localhost//"
 export const assets ={
     parcel,
     booking,

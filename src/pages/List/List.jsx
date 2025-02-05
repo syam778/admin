@@ -43,6 +43,7 @@ const List = ({url}) => {
           <b>Name</b>
           <b>Category</b>
           <b>Price</b>
+          <b>Store <p>deteles</p></b>
           <b>Action</b></div>
           {list.map((item,index)=>{
             return(
@@ -50,8 +51,15 @@ const List = ({url}) => {
                 <img src={`${url}/images/`+item.image} alt="" />
                 <p>{item.name}</p>
                 <p>{item.category}</p>
-                <p>${item.price}</p>
-                <p onClick={()=>removeFood(item._id)} className='cursor'>x</p>
+                <p>₹{item.price}</p>
+                <span className='stor'>
+                <p className='city'>{item.city}</p>
+                
+                <p className='street'>{item.street}</p>
+                <p className='brand'>{item.firstName}</p>
+                <p className='phone'>{item.phone}</p>
+                </span>
+                <p onClick={()=>removeFood(item._id)} className='cursor'>X</p>
               </div>
             )
 

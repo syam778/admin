@@ -1,6 +1,6 @@
 .list-table-format{
     display: grid;
-    grid-template-columns: 0.8fr 1fr 1fr 1fr 0.5fr ;
+    grid-template-columns: 0.6fr 0.8fr 0.8fr 0.6fr 0.4fr 0.6fr ;
     align-items: center;
     padding: 10px 20px;
     gap: 15px;
@@ -50,11 +50,29 @@
 }
 .cursor{
     cursor: pointer;
+    margin-left: 50px;
+    color: red;
+}
+.phone{
+    color: blue;
+    font-size: 13px;
+}
+.brand{
+    color: green;
+    font-weight: 800;
+}
+.city{
+    color: black;
+    font-size: 17px;
+}
+.street{
+    color: grey;
+    font-size: 13px;
 }
 @media (max-width:320px){
     .list-table-format{
         display: grid;
-        grid-template-columns: 0.4fr 0.5fr 0.5fr 0.6fr 0.2fr ;
+        grid-template-columns: 0.4fr 0.5fr 0.5fr 0.5fr 0.1fr 0.1fr ;
         align-items: center;
         padding: 3px 7.5px;
         gap: 7px;
@@ -76,14 +94,15 @@
     .pop{
         display: flex;
         align-items: center;
-        gap: 9px;
+        gap: 5px;
         margin-left: 0px;
         justify-content: space-around;
         font-size: 7px;
         font-weight: 500;
+        margin-left: 8px;
     }
     .list{
-        margin-left: 0px;
+        margin-left: -10px;
         margin-top: 10px;
         justify-content: center;
         align-items: center;
@@ -108,6 +127,34 @@
     }
     .cursor{
         cursor: pointer;
+        color: red;
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .phone{
+        color: blue;
+        font-size: 6px;
+        
+    }
+    .stor .phone{
+        margin-left: 0px;
+    }
+    .stor{
+        margin-right: -10px;
+    }
+    
+    .brand{
+        color: green;
+        font-weight: 500;
+        font-size: 6px;
+    }
+    .city{
+        color: black;
+        font-size: 6px;
+    }
+    .street{
+        color: grey;
+        font-size: 6px;
     }
     
 }
