@@ -32,6 +32,8 @@
     justify-content: center;
     align-items: center;
     
+    
+    
 }
 .list h2{
     display: flex;
@@ -45,6 +47,8 @@
     margin-left: 40px;
     margin-top: 0px;
     border: 2px solid tomato;
+    
+    
     
 
 }
