@@ -7,7 +7,8 @@ import order from './order.png'
 import logoutt from './logoutt.png'
 import remove from './remove.png'
 import rating from './rating.png'
- 
+ // src/assets/assets.js
+
 
 //export const url = "https://app.netlify.com/sites/backend-speed-del/overview"
 //export const url = "http://localhost//"
