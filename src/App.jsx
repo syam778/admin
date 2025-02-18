@@ -15,7 +15,11 @@ import 'react-toastify/dist/ReactToastify.css';
 const App = () => {
   //const url = "https://app.netlify.com/sites/backend-speed-del/overview"
   //const url = "http://localhost:4001"
+<<<<<<< HEAD
   const url = "https://backend-18-0jhq.onrender.com"
+=======
+    const url = "https://backend-18-0jhq.onrender.com"
+>>>>>>> e02c66cb9e86a85f8faf33b7a64cfd70ff6c5bea
   return (
     <div >
       <ToastContainer/>
